@@ -1,0 +1,12 @@
+fastapi==0.110.2
+uvicorn[standard]==0.29.0
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+pydantic==2.6.4
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+
+# model dependencies
+torch==2.1.2
+passlib==1.7.4

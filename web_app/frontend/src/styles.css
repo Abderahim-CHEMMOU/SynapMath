@@ -1,0 +1,218 @@
+:root {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f3f5f9;
+  color: #1f2933;
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+button.link {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.link:hover {
+  text-decoration: underline;
+}
+
+button.link:disabled {
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+label input {
+  font-weight: 400;
+  color: #1f2933;
+}
+
+.layout {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-input input {
+  padding: 8px 12px;
+  border: 1px solid #c4c8d0;
+  border-radius: 6px;
+}
+
+.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card input[type="text"] {
+  padding: 10px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.card button {
+  align-self: flex-start;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card button.link {
+  padding: 0;
+  margin-top: 8px;
+}
+
+.card button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.meta {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.options {
+  display: grid;
+  gap: 8px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.option.selected {
+  border-color: #2563eb;
+  background-color: rgba(37, 99, 235, 0.08);
+}
+
+.history ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.history li {
+  background-color: #fff;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.mastery-message {
+  margin-bottom: 16px;
+}
+
+.card.success {
+  border: 1px solid #10b981;
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+.progress {
+  margin-top: 24px;
+}
+
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.progress-table th,
+.progress-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.progress-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.progress-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.recommendation .card button {
+  margin-top: 8px;
+}
+
+.auth-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
